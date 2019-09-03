@@ -22,6 +22,36 @@
             <label for="number" id="number-label">
                 * Age: <input type="number" id="number" name="age" placeholder="Age..." required autocomplete="off" min="0" max="150">
             </label>
+            <br>
+            <label for="dropdown" id="dropdown-label">
+                Which option best describes your current role? 
+                <select id="dropdown" name="current-role">
+                    <option selected disabled>Select an option</option>
+                    <option>Student</option>
+                    <option>Full Time Job</option>
+                    <option>Full Time Learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+            </label>
+            <br>
+            <label for="drop-down" id="drop-down-label">
+                What do you like most in FCC: 
+                <select id="drop-down" name="most-liked">
+                    <option selected disabled>Select an option</option>
+                    <option>Challenges</option>
+                    <option>Projects</option>
+                    <option>Community</option>
+                    <option>Open Source</option>
+                </select>
+            </label>
+            <br>
+            <label for="recommend" id="recommend-label">
+                * How likely is that you would recommend freeCodeCamp to a friend? 
+                <input type="radio" id="radio1" name="recommend" value="Definitely"> Definitely
+                <input type="radio" id="radio2" name="recommend" value="Maybe"> Maybe
+                <input type="radio" id="radio3" name="recommend" value="Not Sure"> Not Sure
+            </label>
         </form>
     </article>
 </body>
