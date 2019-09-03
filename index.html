@@ -7,17 +7,21 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <h2 id="title">Survey Form</h2>
+    <h1 id="title">Survey Form</h1>
     <article id="main">
         <p id="description">Let us know how we can improve freeCodeCamp</p>
         <form id="survey-form">
             <label for="name">
                 * Name: <input type="text" id="name" name="name" placeholder="Enter your name here..." required  autocomplete="off" autofocus>
             </label>
+            <br>
             <label for="email">
-                * Email <input type="email" id="email" name="email" placeholder="email@example.com" required autocomplete="off">
+                * Email: <input type="email" id="email" name="email" placeholder="email@example.com" required autocomplete="off">
             </label>
-            
+            <br>
+            <label for="number">
+                * Age: <input type="number" id="number" name="age" placeholder="Age..." required autocomplete="off" min="0" max="150">
+            </label>
         </form>
     </article>
 </body>
