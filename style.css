@@ -28,6 +28,7 @@ body {background-color: var(--pb);}
 } 
 input, select, textarea, button {font-size: 3vh; padding: 5px; border-radius: 5px;}
 
+hr {border: 1px solid var(--tb);}
 /* ------------------- Main Styles ------------------- */
 #description {text-align: center; font-style: italic;}
 
