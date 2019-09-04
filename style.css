@@ -30,3 +30,12 @@ input, select, textarea, button {font-size: 3vh; padding: 5px; border-radius: 5p
 
 /* ------------------- Main Styles ------------------- */
 #description {text-align: center; font-style: italic;}
+
+/* Details Styles */
+#details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
