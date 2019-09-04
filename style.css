@@ -32,6 +32,7 @@ hr {border: 1px solid var(--tb);}
 /* ------------------- Main Styles ------------------- */
 #description {text-align: center; font-style: italic;}
 
+/* Form Styles */
 /* Details and Questions Styles */
 #details, #questions {
     display: flex;
@@ -39,4 +40,11 @@ hr {border: 1px solid var(--tb);}
     justify-content: space-between;
     align-items: center;
 }
-
+/* Comments Styles */
+#comments-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+#comments {margin-left: 1.5vw; width: 50%; font-size: 2vh;}
