@@ -31,8 +31,8 @@ input, select, textarea, button {font-size: 3vh; padding: 5px; border-radius: 5p
 /* ------------------- Main Styles ------------------- */
 #description {text-align: center; font-style: italic;}
 
-/* Details Styles */
-#details {
+/* Details and Questions Styles */
+#details, #questions {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
