@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text|Poiret+One&display=swap');
 
 :root {
-    --pb: hsl(150, 50%, 70%);
-    --sb: hsl(180, 65%, 80%);
-    --tb: hsl(120, 45%, 30%);
+    --pb: hsl(270, 45%, 87%);
+    --sb: hsl(120, 65%, 80%);
+    --tb: hsl(60, 75%, 40%);
     --po: 'Poiret One';
     --ct: 'Crimson Text';
 }
