@@ -4,7 +4,7 @@
 :root {
     --pb: hsl(270, 45%, 87%);
     --sb: hsl(120, 65%, 80%);
-    --tb: hsl(60, 75%, 40%);
+    --tb: hsl(120, 75%, 10%);
     --po: 'Poiret One';
     --ct: 'Crimson Text';
 }
@@ -13,25 +13,34 @@ body {background-color: var(--pb);}
 
 #title {
     font-family: var(--po, display);
-    font-size: 10vh;
+    font-size: 3rem;
     text-align: center;
     text-decoration: underline;
 }
 
 #description {text-align: center; font-weight: 500;}
 
-/* Redundant Styles:
-
 #main {
     background-color: var(--sb);
-    margin: 2.5%;
+    margin: 2rem auto;
     border: 2px solid var(--tb);
     border-radius: 10px;
-    padding:  1.25% 2.5%;
+    padding: 20px 5px;
     font-family: var(--ct, serif);
-    font-size: 4vh;
+    font-size: 1.25rem;
     width: 90%;
 } 
+
+#submit {
+    margin: auto;
+    border: 1px solid var(--tb);
+    font-size: 1.25rem;
+    display: block;
+}
+
+/* Redundant Styles:
+
+
 input, select, textarea, button {font-size: 3vh; padding: 5px; border-radius: 5px;}
 
 hr {width: 85vw; margin: 2vh auto; border: 1px solid var(--tb);}
@@ -67,7 +76,7 @@ hr {width: 85vw; margin: 2vh auto; border: 1px solid var(--tb);}
 
 // Submit Styles:
 
-#submit {background-color: var(--tb); margin: auto; border: 1px solid var(--pb); border-radius: 5px; padding: 10px; color: var(--sb); display: block; position: relative; bottom: 2vh;}
+
 
 <-------------------------- Media Queries -------------------------->
 
