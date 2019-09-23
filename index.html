@@ -17,25 +17,25 @@
         <p id="description">Let us know how we can improve freeCodeCamp</p>
         <form id="survey-form" method="POST">
             <section id="details" class="container">
-                <div id="d-div1" class="d-div form-group">
-                    <label for="name" id="name-label" class="required">* Name: </label>
-                    <input type="text" id="name" class="form-control" name="name" placeholder="Enter your name here..." required  autocomplete="off" autofocus>
+                <div id="d-div1" class="d-div container form-group row">
+                    <label for="name" id="name-label" class="required col-4">* Name: </label>
+                    <input type="text" id="name" class="form-control col-8" name="name" placeholder="Enter your name here..." required  autocomplete="off" autofocus>
                 </div>
-                <div id="d-div2" class="d-div form-group">
-                    <label for="email" id="email-label" class="required">* Email: </label>
-                    <input type="email" id="email" class="form-control" name="email" placeholder="email@example.com" required autocomplete="off">
+                <div id="d-div2" class="d-div container form-group row">
+                    <label for="email" id="email-label" class="required col-4">* Email: </label>
+                    <input type="email" id="email" class="form-control col-8" name="email" placeholder="email@example.com" required autocomplete="off">
                 </div>
-                <div id="d-div3" class="d-div form-group">
-                    <label for="number" id="number-label" class="required">* Age:</label>
-                    <input type="number" id="number" class="form-control" name="age" placeholder="Age..." required autocomplete="off" min="0" max="150">
+                <div id="d-div3" class="d-div container form-group row">
+                    <label for="number" id="number-label" class="required col-4">* Age:</label>
+                    <input type="number" id="number" class="form-control col-8" name="age" placeholder="Age..." required autocomplete="off" min="0" max="150">
                 </div>
             </section>
             <hr>
             <section id="questions" class="container">
-                <div id="q1" class="form-group">
-                    <label for="dropdown" id="dropdown-label" class="q-label">
+                <div id="q1" class="form-group row">
+                    <label for="dropdown" id="dropdown-label" class="q-label col-12">
                         Which option best describes your current role? 
-                        <select id="dropdown" class="form-control" name="current-role">
+                        <select id="dropdown" class="form-control col-12" name="current-role">
                             <option selected disabled>Select an option</option>
                             <option>Student</option>
                             <option>Full Time Job</option>
@@ -55,10 +55,10 @@
                         <p id="radio3" class="rc"><input class="form-check-input" type="radio" name="recommend" autocomplete="off" value="Not Sure"> Not Sure </p>
                     </div>
                 </div>
-                <div id="q3" class="form-group">
-                    <label for="drop-down" id="drop-down-label" class="q-label">
+                <div id="q3" class="form-group row">
+                    <label for="drop-down" id="drop-down-label" class="q-label col-12">
                         What do you like most in FCC? 
-                        <select id="drop-down" name="most-liked" class="form-control">
+                        <select id="drop-down" name="most-liked" class="form-control col-12">
                             <option selected disabled>Select an option</option>
                             <option>Challenges</option>
                             <option>Projects</option>
