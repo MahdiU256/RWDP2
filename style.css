@@ -9,7 +9,6 @@
     --ct: 'Crimson Text';
 }
 
-/* Redundant Styles:
 body {background-color: var(--pb);}
 
 #title {
@@ -18,6 +17,9 @@ body {background-color: var(--pb);}
     text-align: center;
     text-decoration: underline;
 }
+
+/* Redundant Styles:
+
 #main {
     background-color: var(--sb);
     margin: 2.5%;
