@@ -18,6 +18,8 @@ body {background-color: var(--pb);}
     text-decoration: underline;
 }
 
+#description {text-align: center; font-weight: 500;}
+
 /* Redundant Styles:
 
 #main {
@@ -36,7 +38,7 @@ hr {width: 85vw; margin: 2vh auto; border: 1px solid var(--tb);}
 
 <------------------------ Main Styles: ---------------------------->
 
-#description {text-align: center; font-weight: 500;}
+
 
 // Form Styles: 
 // Details and Questions Styles:
