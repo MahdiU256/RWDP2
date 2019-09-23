@@ -16,75 +16,83 @@
     <article id="main" class="container-fluid">
         <p id="description">Let us know how we can improve freeCodeCamp</p>
         <form id="survey-form" method="POST">
-            <section id="details">
-                <div id="d-div1" class="d-div">
+            <section id="details" class="container">
+                <div id="d-div1" class="d-div form-group">
                     <label for="name" id="name-label" class="required">* Name: </label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name here..." required  autocomplete="off" autofocus>
+                    <input type="text" id="name" class="form-control" name="name" placeholder="Enter your name here..." required  autocomplete="off" autofocus>
                 </div>
-                <div id="d-div2" class="d-div">
+                <div id="d-div2" class="d-div form-group">
                     <label for="email" id="email-label" class="required">* Email: </label>
-                    <input type="email" id="email" name="email" placeholder="email@example.com" required autocomplete="off">
+                    <input type="email" id="email" class="form-control" name="email" placeholder="email@example.com" required autocomplete="off">
                 </div>
-                <div id="d-div3" class="d-div">
+                <div id="d-div3" class="d-div form-group">
                     <label for="number" id="number-label" class="required">* Age:</label>
-                    <input type="number" id="number" name="age" placeholder="Age..." required autocomplete="off" min="0" max="150">
+                    <input type="number" id="number" class="form-control" name="age" placeholder="Age..." required autocomplete="off" min="0" max="150">
                 </div>
             </section>
             <hr>
-            <section id="questions">
-                <label for="dropdown" id="dropdown-label" class="q-label">
-                    Which option best describes your current role? 
-                    <select id="dropdown" name="current-role">
-                        <option selected disabled>Select an option</option>
-                        <option>Student</option>
-                        <option>Full Time Job</option>
-                        <option>Full Time Learner</option>
-                        <option>Prefer not to say</option>
-                        <option>Other</option>
-                    </select>
-                </label>
-                <label for="recommend" id="recommend-label" class="q-label required">
-                    * How likely is that you would recommend freeCodeCamp to a friend?
-                </label>
-                    <div id='radio'>
-                        <p id="radio1" class="rc"><input type="radio" name="recommend" autocomplete="off" required value="Definitely"> Definitely </p>
-                        <p id="radio2" class="rc"><input type="radio" name="recommend" autocomplete="off" value="Maybe"> Maybe </p>
-                        <p id="radio3" class="rc"><input type="radio" name="recommend" autocomplete="off" value="Not Sure"> Not Sure </p>
+            <section id="questions" class="container">
+                <div id="q1" class="form-group">
+                    <label for="dropdown" id="dropdown-label" class="q-label">
+                        Which option best describes your current role? 
+                        <select id="dropdown" class="form-control" name="current-role">
+                            <option selected disabled>Select an option</option>
+                            <option>Student</option>
+                            <option>Full Time Job</option>
+                            <option>Full Time Learner</option>
+                            <option>Prefer not to say</option>
+                            <option>Other</option>
+                        </select>
+                    </label>
+                </div>
+                <div id="q2" class="form-group">
+                    <label for="recommend" id="recommend-label" class="q-label required">
+                        * How likely is that you would recommend freeCodeCamp to a friend?
+                    </label>
+                    <div id='radio' class="form-check">
+                        <p id="radio1" class="rc"><input class="form-check-input" type="radio" name="recommend" autocomplete="off" required value="Definitely"> Definitely </p>
+                        <p id="radio2" class="rc"><input class="form-check-input" type="radio" name="recommend" autocomplete="off" value="Maybe"> Maybe </p>
+                        <p id="radio3" class="rc"><input class="form-check-input" type="radio" name="recommend" autocomplete="off" value="Not Sure"> Not Sure </p>
                     </div>
-                <label for="drop-down" id="drop-down-label" class="q-label">
-                    What do you like most in FCC? 
-                    <select id="drop-down" name="most-liked">
-                        <option selected disabled>Select an option</option>
-                        <option>Challenges</option>
-                        <option>Projects</option>
-                        <option>Community</option>
-                        <option>Open Source</option>
-                    </select>
-                </label>
-                <label for="improve" id="improve-label" class="q-label">
-                    Things that should be improved in the future (Check all that apply):
-                </label>
-                <div id="checkbox">
-                    <p id="checkbox1" class="rc"><input type="checkbox" name="improve" value="Front-end Projects"> Front-end Projects </p>
-                    <p id="checkbox2" class="rc"><input type="checkbox" name="improve" value="Back-end Projects"> Back-end Projects </p>
-                    <p id="checkbox3" class="rc"><input type="checkbox" name="improve" value="Data Visualization"> Data Visualization </p>
-                    <p id="checkbox4" class="rc"><input type="checkbox" name="improve" value="Challenges"> Challenges </p>
-                    <p id="checkbox5" class="rc"><input type="checkbox" name="improve" value="Open Source Community"> Open Source Community </p>
-                    <p id="checkbox6" class="rc"><input type="checkbox" name="improve" value="Gitter Help Rooms"> Gitter Help Rooms </p>
-                    <p id="checkbox7" class="rc"><input type="checkbox" name="improve" value="Videos"> Videos </p>
-                    <p id="checkbox8" class="rc"><input type="checkbox" name="improve" value="City Meetups"> City Meetups </p>
-                    <p id="checkbox9" class="rc"><input type="checkbox" name="improve" value="Wiki"> Wiki </p>
-                    <p id="checkbox10" class="rc"><input type="checkbox" name="improve" value="Forum"> Forum </p>
-                    <p id="checkbox11" class="rc"><input type="checkbox" name="improve" value="Additional Courses"> Additional Courses </p>
+                </div>
+                <div id="q3" class="form-group">
+                    <label for="drop-down" id="drop-down-label" class="q-label">
+                        What do you like most in FCC? 
+                        <select id="drop-down" name="most-liked" class="form-control">
+                            <option selected disabled>Select an option</option>
+                            <option>Challenges</option>
+                            <option>Projects</option>
+                            <option>Community</option>
+                            <option>Open Source</option>
+                        </select>
+                    </label>
+                </div>
+                <div id="q4" class="form-group">
+                    <label for="improve" id="improve-label" class="q-label">
+                        Things that should be improved in the future (Check all that apply):
+                    </label>
+                    <div id="checkbox" class="form-check">
+                        <p id="checkbox1" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Front-end Projects"> Front-end Projects </p>
+                        <p id="checkbox2" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Back-end Projects"> Back-end Projects </p>
+                        <p id="checkbox3" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Data Visualization"> Data Visualization </p>
+                        <p id="checkbox4" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Challenges"> Challenges </p>
+                        <p id="checkbox5" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Open Source Community"> Open Source Community </p>
+                        <p id="checkbox6" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Gitter Help Rooms"> Gitter Help Rooms </p>
+                        <p id="checkbox7" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Videos"> Videos </p>
+                        <p id="checkbox8" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="City Meetups"> City Meetups </p>
+                        <p id="checkbox9" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Wiki"> Wiki </p>
+                        <p id="checkbox10" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Forum"> Forum </p>
+                        <p id="checkbox11" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Additional Courses"> Additional Courses </p>
+                    </div>
                 </div>
             </section>
             <hr>
-            <section id="comments-section">
+            <section id="comments-section" class="container">
                 <label for="comments" id="comments-label">Any Comments or Suggestions?</label>
-                <textarea id="comments" placeholder="Enter your comments and/or suggestions here..." rows=10 maxlength="500"></textarea>
+                <textarea id="comments" class="form-control" placeholder="Enter your comments and/or suggestions here..." rows=8 maxlength="500"></textarea>
             </section>
             <br>
-            <button id="submit" name="submit" value="Submit">Submit</button>
+            <button id="submit" class="btn btn-info" name="submit" value="Submit">Submit</button>
         </form>
     </article>
     <!-- Optional JavaScript -->
