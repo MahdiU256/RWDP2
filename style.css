@@ -3,8 +3,8 @@
 
 :root {
     --pb: hsl(270, 45%, 87%);
-    --sb: hsl(120, 65%, 80%);
-    --tb: hsl(120, 75%, 10%);
+    --sb: hsl(150, 65%, 73%);
+    --tb: hsl(30, 50%, 80%);
     --po: 'Poiret One';
     --ct: 'Crimson Text';
 }
@@ -32,8 +32,10 @@ body {background-color: var(--pb);}
 } 
 
 #submit {
+    background-color: var(--tb);
+    color: black;
     margin: auto;
-    border: 1px solid var(--tb);
+    border: 1px solid var(--sb);
     font-size: 1.25rem;
     display: block;
 }
