@@ -46,13 +46,24 @@
                     </select>
                 </div>
                 <div id="q2" class="form-group">
-                    <label for="recommend" id="recommend-label" class="q-label required">
-                        * How likely is that you would recommend freeCodeCamp to a friend?
-                    </label>
-                    <div id='radio' class="form-check">
-                        <p id="radio1" class="rc"><input class="form-check-input" type="radio" name="recommend" autocomplete="off" required value="Definitely"> Definitely </p>
-                        <p id="radio2" class="rc"><input class="form-check-input" type="radio" name="recommend" autocomplete="off" value="Maybe"> Maybe </p>
-                        <p id="radio3" class="rc"><input class="form-check-input" type="radio" name="recommend" autocomplete="off" value="Not Sure"> Not Sure </p>
+                    <div class="row">
+                        <legend class="col-form-label col-sm-12 col-md-8 col-lg-9 col-xl-10">
+                            * How likely is that you would recommend freeCodeCamp to a friend?
+                        </legend>
+                        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
+                            <div class="form-check">
+                                <input id="r1" class="form-check-input" type="radio" name="recommend" autocomplete="off" required value="Definitely">
+                                <label for="r1" id="radio1" class="rc form-check-label">Definitely</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="r2" class="form-check-input" type="radio" name="recommend" autocomplete="off" value="Maybe">  
+                                <label for="r2" id="radio2" class="rc form-check-label">Maybe</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="r3" class="form-check-input" type="radio" name="recommend" autocomplete="off" value="Not Sure"> 
+                                <label for="r3" id="radio3" class="rc form-check-label">Not Sure</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="q3" class="container form-group row">
@@ -67,22 +78,55 @@
                         <option>Open Source</option>
                     </select>
                 </div>
-                <div id="q4" class="form-group">
-                    <label for="improve" id="improve-label" class="q-label">
+                <div id="q4" class="form-group row">
+                    <label for="improve" id="improve-label" class="q-label col-sm-12 col-md-7 col-lg-8 col-xl-9">
                         Things that should be improved in the future (Check all that apply):
                     </label>
-                    <div id="checkbox" class="form-check">
-                        <p id="checkbox1" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Front-end Projects"> Front-end Projects </p>
-                        <p id="checkbox2" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Back-end Projects"> Back-end Projects </p>
-                        <p id="checkbox3" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Data Visualization"> Data Visualization </p>
-                        <p id="checkbox4" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Challenges"> Challenges </p>
-                        <p id="checkbox5" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Open Source Community"> Open Source Community </p>
-                        <p id="checkbox6" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Gitter Help Rooms"> Gitter Help Rooms </p>
-                        <p id="checkbox7" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Videos"> Videos </p>
-                        <p id="checkbox8" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="City Meetups"> City Meetups </p>
-                        <p id="checkbox9" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Wiki"> Wiki </p>
-                        <p id="checkbox10" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Forum"> Forum </p>
-                        <p id="checkbox11" class="rc"><input class="form-check-input" type="checkbox" name="improve" value="Additional Courses"> Additional Courses </p>
+                    <div id="checkbox" class="form-check col-sm-12 col-md-5 col-lg-4 col-xl-3">
+                        <div class="form-check">
+                            <input id="checkbox1" class="form-check-input" type="checkbox" name="improve" value="Front-end Projects"> 
+                            <label for="checkbox1" class="form-check-label">Front-end Projects</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="checkbox2" class="form-check-input" type="checkbox" name="improve" value="Back-end Projects"> 
+                            <label for="checkbox2" class="form-check-label">Back-end Projects</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="checkbox3" class="form-check-input" type="checkbox" name="improve" value="Data Visualization"> 
+                            <label for="checkbox3" class="form-check-label">Data Visualization</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="checkbox4" class="form-check-input" type="checkbox" name="improve" value="Challenges"> 
+                            <label for="checkbox4" class="form-check-label">Challenges</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="checkbox5" class="form-check-input" type="checkbox" name="improve" value="Open Source Community"> 
+                            <label for="checkbox5" class="form-check-label">Open Source Community</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="checkbox6" class="form-check-input" type="checkbox" name="improve" value="Gitter Help Rooms"> 
+                            <label for="checkbox6" class="form-check-label">Gitter Help Rooms</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="checkbox7" class="form-check-input" type="checkbox" name="improve" value="Videos"> 
+                            <label for="checkbox7" class="form-check-label">Videos</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="checkbox8" class="form-check-input" type="checkbox" name="improve" value="City Meetups"> 
+                            <label for="checkbox8" class="form-check-label">City Meetups</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="checkbox9" class="form-check-input" type="checkbox" name="improve" value="Wiki"> 
+                            <label for="checkbox9" class="form-check-label">Wiki</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="checkbox10" class="form-check-input" type="checkbox" name="improve" value="Forum"> 
+                            <label for="checkbox10" class="form-check-label">Forum</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="checkbox11" class="form-check-input" type="checkbox" name="improve" value="Additional Courses"> 
+                            <label for="checkbox11" class="form-check-label">Additional Courses</label>
+                        </div>
                     </div>
                 </div>
             </section>
