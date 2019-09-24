@@ -12,6 +12,7 @@
 body {background-color: var(--pb);}
 
 #title {
+    margin-top: 25px;
     font-family: var(--po, display);
     font-size: 3rem;
     text-align: center;
@@ -35,7 +36,7 @@ body {background-color: var(--pb);}
     background-color: var(--tb);
     color: black;
     margin: auto;
-    border: 1px solid var(--sb);
+    border: 1px solid black;
     font-size: 1.25rem;
     display: block;
 }
