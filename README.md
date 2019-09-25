@@ -1,4 +1,4 @@
-# RWDP2
+# RWDP2 - Survey Form
 
 ## FCC -> Responsive Web Design Projects -> Project 2: Survey Form
 
